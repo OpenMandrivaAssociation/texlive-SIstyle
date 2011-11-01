@@ -3,7 +3,7 @@ Version:	2.3a
 Release:	1
 Summary:	Package to typeset SI units, numbers and angles
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive//macros/latex/contrib/SIstyle
+URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/SIstyle
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/SIstyle.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/SIstyle.doc.tar.xz
@@ -29,11 +29,13 @@ sistyle has maintenance-only support, now.
     %_texmf_mktexlsr_post
 
 %preun
-    %_texmf_mktexlsr_preun
+    if [ $1 -eq 0 ]; then
+	%_texmf_mktexlsr_pre
+    fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mltexlsr_post
+	%_texmf_mktexlsr_post
     fi
 
 #-----------------------------------------------------------------------
