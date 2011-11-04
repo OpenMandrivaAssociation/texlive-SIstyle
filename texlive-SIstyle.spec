@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /macros/latex/contrib/SIstyle
+# catalog-date 2008-07-16 16:54:56 +0200
+# catalog-license lppl
+# catalog-version 2.3a
 Name:		texlive-SIstyle
 Version:	2.3a
 Release:	1
@@ -51,6 +57,7 @@ sistyle has maintenance-only support, now.
 #- source
 %doc %{_texmfdistdir}/source/latex/SIstyle/sistyle.dtx
 %doc %{_texmfdistdir}/source/latex/SIstyle/sistyle.ins
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -61,3 +68,5 @@ sistyle has maintenance-only support, now.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
