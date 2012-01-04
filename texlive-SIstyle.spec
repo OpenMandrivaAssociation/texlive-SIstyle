@@ -6,7 +6,7 @@
 # catalog-version 2.3a
 Name:		texlive-SIstyle
 Version:	2.3a
-Release:	1
+Release:	2
 Summary:	Package to typeset SI units, numbers and angles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/SIstyle
