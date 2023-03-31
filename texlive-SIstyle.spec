@@ -1,6 +1,6 @@
 Name:		texlive-SIstyle
 Version:	59682
-Release:	1
+Release:	2
 Summary:	Package to typeset SI units, numbers and angles
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/SIstyle
